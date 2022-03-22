@@ -2,5 +2,14 @@ body {
   background-color: #373543;
 }
 p {
-  color: #e9b472;
+  color: whitesmoke;
+  text-align: center;
+  border: 1px solid #e9b472;
+  padding: 3px;
+  margin-right: 20%;
+  margin-left: 20%;
+  font-family: k;
+}
+span {
+  color: aliceblue;
 }
