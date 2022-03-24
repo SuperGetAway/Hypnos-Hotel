@@ -1,7 +1,7 @@
 body {
   background-color: #373543;
 }
-p {
+p.Toplane {
   color: whitesmoke;
   text-align: center;
   border: 1px solid #e9b472;
@@ -24,7 +24,7 @@ img {
   border-radius: 5%;
 }
 .Marseille {
-  border: 3px solid rgb(100, 73, 36);
+  border: 3px solid #e9b472;
   box-shadow: 8px 8px 5px black;
   float: right;
   position: absolute;
@@ -32,8 +32,19 @@ img {
   left: 700px;
 }
 .Paris {
-  border: 3px solid rgb(100, 73, 36);
+  border: 3px solid #e9b472;
   box-shadow: 8px 8px 5px black;
   float: right;
   position: absolute;
+}
+.Corse {
+  border: 3px solid #e9b472;
+  box-shadow: 8px 8px 5px black;
+  float: right;
+  position: absolute;
+  top: 425px;
+  left: 1300px;
+}
+p {
+  color: aliceblue;
 }
