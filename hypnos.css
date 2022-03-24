@@ -8,8 +8,32 @@ p {
   padding: 3px;
   margin-right: 20%;
   margin-left: 20%;
-  font-family: k;
+  font-family: Kanit;
 }
 span {
   color: aliceblue;
+  font-family: Kanit;
+}
+.frontpic {
+  width: 450px;
+  height: 550px;
+  margin: 5%;
+  font-family: Kanit, bold;
+}
+img {
+  border-radius: 5%;
+}
+.Marseille {
+  border: 3px solid rgb(100, 73, 36);
+  box-shadow: 8px 8px 5px black;
+  float: right;
+  position: absolute;
+  top: 425px;
+  left: 700px;
+}
+.Paris {
+  border: 3px solid rgb(100, 73, 36);
+  box-shadow: 8px 8px 5px black;
+  float: right;
+  position: absolute;
 }
