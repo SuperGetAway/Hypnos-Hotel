@@ -14,37 +14,50 @@ span {
   color: aliceblue;
   font-family: Kanit;
 }
-.frontpic {
-  width: 450px;
-  height: 550px;
-  margin: 5%;
-  font-family: Kanit, bold;
-}
+
 img {
   border-radius: 5%;
 }
 .Marseille {
   border: 3px solid #e9b472;
   box-shadow: 8px 8px 5px black;
-  float: right;
-  position: absolute;
-  top: 425px;
-  left: 700px;
 }
 .Paris {
   border: 3px solid #e9b472;
   box-shadow: 8px 8px 5px black;
-  float: right;
-  position: absolute;
 }
+
 .Corse {
   border: 3px solid #e9b472;
   box-shadow: 8px 8px 5px black;
-  float: right;
-  position: absolute;
-  top: 425px;
-  left: 1300px;
 }
 p {
   color: aliceblue;
+  text-align: center;
+}
+
+.main {
+  width: 100%;
+  min-height: 73.1vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.table1 {
+  min-height: 73.1vh;
+  min-width: 33.1vw;
+  text-align: center;
+}
+
+.table2 {
+  min-height: 73.1vh;
+  min-width: 33.1vw;
+
+  text-align: center;
+}
+.table3 {
+  min-height: 73.1vh;
+  min-width: 33.1vw;
+
+  text-align: center;
 }
