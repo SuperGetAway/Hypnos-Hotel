@@ -1,0 +1,30 @@
+* {
+  background-color: #373543;
+}
+span {
+  color: aliceblue;
+  font-family: Kanit;
+}
+.décoration {
+  border: 3px solid #e9b472;
+  box-shadow: 8px 8px 5px black;
+}
+img {
+  border-radius: 5%;
+}
+
+h2 {
+  color: #e9b472;
+  font-family: Kanit;
+}
+a {
+  text-decoration: none;
+  color: #e9b472;
+}
+
+.main {
+  width: 100%;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
