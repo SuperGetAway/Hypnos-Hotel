@@ -83,3 +83,27 @@ img:nth-child(5) {
 .desc > p {
   color: aliceblue;
 }
+
+.Little-pic {
+  padding-left: 300px;
+}
+
+.lp {
+  width: 150px;
+  height: 100px;
+  margin: 50px;
+}
+
+h2 {
+  color: #e9b472;
+  font-family: Kanit;
+  padding-left: 100px;
+  font-size: 40px;
+}
+
+.Other-pic {
+  padding-left: 70px;
+}
+.op {
+  margin: 50px;
+}
