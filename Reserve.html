@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="Reservee.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Réservation</title>
+
+    <nav class="navbar navbar-dark bg-drak">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="hypnos.html"
+            ><span>Accueil</span></a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Reserve.html"><span>Réservation</span></a>
+        </li>
+      </ul>
+    </nav>
+  </head>
+  <body>
+    <div class="formulaire">
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Prénom</label>
+        <input
+          type="name"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Xavier"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Nom</label>
+        <input
+          type="fristname"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Dupont"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Adresse mail</label
+        >
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Xavierdupont@exemple.com"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label"
+          >Numéro de téléphone</label
+        >
+        <input
+          type="phonenumber"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="06.00.00.00.00"
+        />
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton2"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Sélectionné Votre établissements
+        </button>
+        <ul
+          class="dropdown-menu dropdown-menu-dark"
+          aria-labelledby="dropdownMenuButton2"
+        >
+          <li><a class="dropdown-item active" href="#">Paris</a></li>
+          <li><a class="dropdown-item" href="#">Marseille</a></li>
+          <li><a class="dropdown-item" href="#">Alsace/a></li>
+          <li><hr class="dropdown-divider" /></li>
+          <li><a class="dropdown-item" href="#">Nice</a></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

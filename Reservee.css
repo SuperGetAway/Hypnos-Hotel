@@ -1,0 +1,17 @@
+* {
+  background-color: #373543;
+}
+span {
+  color: aliceblue;
+  font-family: Kanit;
+}
+.formulaire {
+  color: #e9b472;
+  font-family: Kanit;
+
+  padding: 60px;
+}
+.mb-3 {
+  height: 70px;
+  width: 500px;
+}
