@@ -15,3 +15,18 @@ span {
   height: 70px;
   width: 500px;
 }
+.click2 {
+  color: aliceblue;
+}
+input::placeholder {
+  color: white;
+}
+select:invalid {
+  color: white;
+}
+select:valid {
+  color: white;
+}
+.Env {
+  color: #373543;
+}

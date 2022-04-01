@@ -71,27 +71,44 @@
           placeholder="06.00.00.00.00"
         />
       </div>
-      <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
-          type="button"
-          id="dropdownMenuButton2"
-          data-bs-toggle="dropdown"
-          aria-expanded="false"
-        >
-          Sélectionné Votre établissements
-        </button>
-        <ul
-          class="dropdown-menu dropdown-menu-dark"
-          aria-labelledby="dropdownMenuButton2"
-        >
-          <li><a class="dropdown-item active" href="#">Paris</a></li>
-          <li><a class="dropdown-item" href="#">Marseille</a></li>
-          <li><a class="dropdown-item" href="#">Alsace/a></li>
-          <li><hr class="dropdown-divider" /></li>
-          <li><a class="dropdown-item" href="#">Nice</a></li>
-        </ul>
+      <div class="click1">
+        <label for="sujet">Sélectionné Votre établissement</label><br />
+        <div class="click2">
+          <select name="sujet" id="sujet" required>
+            <option value="" disabled selected hidden>
+              Choisissez l'établissement
+            </option>
+            <option value="Paris-Palace">Paris Palace</option>
+            <option value="Le-Grand-Marseille">Le Grand Marseille</option>
+            <option value="Alsace-Hotel">Alsace Hotel</option>
+            <option value="Plaza-Toulouse">Plaza Toulouse</option>
+            <option value="Nice-Azur">Nice Azur</option>
+            <option value="Monaco-Garden">Monaco Garden</option>
+            <option value="Corse-Area">Corse Area</option>
+          </select>
+        </div>
+        <br/>
+         <div class="click1">
+        <label for="sujet">Sélectionné La Suite</label><br />
+        <div class="click2">
+          <select name="sujet" id="sujet" required>
+            <option value="" disabled selected hidden>
+              Choisissez la Suite
+            </option>
+            <option value="suite1">Suite 1</option>
+            <option value="suite2">Suite 2</option>
+            <option value="suite1">Suite 3</option>
+        <br />
+        <div class="Env">
+          <button type="submit" class="btn btn-light btn-lg">
+            Envoyer le formulaire
+          </button>
+        </div>
       </div>
+      
+    </div>
+    <div>
+    <button type="button" class="btn btn-primary btn-lg">Large button</button>
     </div>
   </body>
 </html>
