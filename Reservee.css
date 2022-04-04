@@ -5,11 +5,12 @@ span {
   color: aliceblue;
   font-family: Kanit;
 }
+
 .formulaire {
   color: #e9b472;
   font-family: Kanit;
-
-  padding: 60px;
+  padding-left: 700px;
+  height: 200px;
 }
 .mb-3 {
   height: 70px;
@@ -27,6 +28,16 @@ select:invalid {
 select:valid {
   color: white;
 }
-.Env {
-  color: #373543;
+.confirm {
+  color: black;
+  background-color: white;
+  padding: 0px;
+  height: 0px;
+  padding-left: 210px;
+}
+.liste {
+  padding-left: 140px;
+}
+.liste2 {
+  padding-left: 170px;
 }
