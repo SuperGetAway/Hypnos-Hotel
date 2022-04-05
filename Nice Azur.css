@@ -5,6 +5,11 @@ span {
   color: aliceblue;
   font-family: Kanit;
 }
+.connexion {
+  padding-right: 0px;
+  padding-left: 1580px;
+  color: white;
+}
 /* top */
 img {
   border-radius: 5%;

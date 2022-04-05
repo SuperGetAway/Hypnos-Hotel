@@ -72,71 +72,46 @@
           placeholder="Xavierdupont@exemple.com"
         />
       </div>
-      <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label"
-          >Numéro de téléphone</label
-        >
-        <input
-          type="phonenumber"
-          class="form-control"
-          id="exampleFormControlInput1"
-          placeholder="06.00.00.00.00"
-        />
-      </div>
-      <div>
-        <label for="sujet">Sélectionné Votre établissement</label><br />
-        <div class="liste">
-          <br/>
-          <select name="sujet" id="sujet" required>
-            <option value="" disabled selected hidden>
-              Choisissez l'établissement
-            </option>
-            <option value="Paris-Palace">Paris Palace</option>
-            <option value="Le-Grand-Marseille">Le Grand Marseille</option>
-            <option value="Alsace-Hotel">Alsace Hotel</option>
-            <option value="Plaza-Toulouse">Plaza Toulouse</option>
-            <option value="Nice-Azur">Nice Azur</option>
-            <option value="Monaco-Garden">Monaco Garden</option>
-            <option value="Corse-Area">Corse Area</option>
-          </select>
-        </div>
-        <br/>
-         <div >
-        <label for="sujet">Sélectionné La Suite</label><br />
-        <div class="liste2">
-          <br/>
-          <select name="sujet" id="sujet" required>
-            <option value="" disabled selected hidden>
-              Choisissez la Suite
-            </option>
-            <option value="suite1">Suite 1</option>
-            <option value="suite2">Suite 2</option>
-            <option value="suite1">Suite 3</option>
-          </select>
-        </div>
+      <br/>
 
-     <div class="reserv">
-        <label for="start">Début du séjour:</label>
-      <div class="cal2">
-        <input type="date" id="start" name="trip-start"
-        value="2018-07-22"
-        min="2022-04-01" max="2025-12-31">
-        </div>
-      
-        <label for="start">Fin du séjour:</label>
-        <div class="cal2">
-        <input type="date" id="start" name="trip-start"
-        value="2018-07-22"
-        min="2022-04-01" max="2025-12-31">
-        </div>
-     </div>
+      <div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+  <label class="form-check-label" for="flexRadioDefault1">
+    Je souhaite poser une réclamation
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Je souhaite commander un service supplémentaire
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Je souhaite en savoir plus sur une suite
+  </label>
+</div>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4" checked>
+  <label class="form-check-label" for="flexRadioDefault2">
+    Pour les autres demandes expliquez votre requête si-desous
+    <div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label"></label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+  </label>
+</div>
+     
+
+    
        
         <br/>
 <div class="confirm">
     <button type="submit" class="btn btn-outline-light">Envoyer</button>
     <i class="bi bi-person-circle"></i>
        </div>
-       </div>
+       
      
 
     
@@ -145,4 +120,3 @@
      
   </body>
 </html>
-

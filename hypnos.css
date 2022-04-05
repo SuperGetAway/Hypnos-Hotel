@@ -14,6 +14,11 @@ span {
   color: aliceblue;
   font-family: Kanit;
 }
+.connexion {
+  padding-right: 0px;
+  padding-left: 1580px;
+  color: white;
+}
 
 img {
   border-radius: 5%;

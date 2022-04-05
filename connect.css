@@ -5,3 +5,15 @@ span {
   color: aliceblue;
   font-family: Kanit;
 }
+
+.connexion {
+  padding-right: 0px;
+  padding-left: 1580px;
+  color: white;
+}
+.connect {
+  padding-left: 700px;
+}
+.logo {
+  padding-bottom: 50px;
+}
