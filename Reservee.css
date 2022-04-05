@@ -41,3 +41,18 @@ select:valid {
 .liste2 {
   padding-left: 170px;
 }
+label {
+  font-family: Kanit;
+}
+.reserv {
+  display: inline;
+}
+input,
+label {
+  margin: 0.4rem 0;
+}
+.cal {
+  color: #e9b472;
+}
+.cal2 {
+}
