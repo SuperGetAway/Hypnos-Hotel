@@ -15,7 +15,6 @@
     />
 
     <title>Connexion</title>
-
     <nav class="navbar navbar-dark bg-drak">
       <ul class="nav">
         <li class="nav-item">
@@ -50,7 +49,7 @@
     <img src="image/best tous.jpg" class="rounded mx-auto d-block alt="..." />
     </div>
  <div class="connect">
- <form action="connect.php" class="row ">  
+ <form action="enregistrer.php" class="row ">  
     
     <div class="col-auto">
       
