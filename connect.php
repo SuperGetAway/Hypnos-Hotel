@@ -48,30 +48,49 @@
     <div class="logo">
     <img src="image/best tous.jpg" class="rounded mx-auto d-block alt="..." />
     </div>
- <div class="connect">
- <form action="enregistrer.php" class="row ">  
-    
-    <div class="col-auto">
-      
-      <label for="inputEmail2" class="visually-hidden">Email</label>
-     <input type="email" class="form-control" id="inputEmail2" placeholder="email">
-     
-    </div>
+ 
+ <?php 
+
+    if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["pseudo"]) && isset($_POST["password"])){
+        include("bddconnect.php");
+        $requete = $pdo->prepare("SELECT * FROM users WHERE pseudo = :pseudo OR email = :email");
+        $requete->execute(array(":pseudo"=>$_POST['pseudo'], ":email"=>$_POST["pseudo"]));
+
+        $verif = $requete->fetch();
+        if(password_verify($_POST['password'], $verif["password"])){
+            echo 'vous etes connecté';
+            $_SESSION["pseudo"] = $_POST["pseudo"];
+        }else{
+            echo 'vous n\'etes pas connecté.';
+        }
+                  
+    }
+
+
+    ?> 
+
+
+
+
+
+
+
+
+        <div class="connexion">
+            <form name="formulaire" method="POST" action="enregistrer.php">
+            <label for="pseudo">Adresse mail ou Pseudo :</label>
+            <input class="identifiants" type="text" name="pseudo">
+            <label for="mdp">Mot de passe:</label>
+            <input class="identifiants" type="password" name="password">
+            <input class="confirm" type="submit" value="confirmer">
+            </form>
+        </div>
+        <div id="inscription">
+            <p>Pas de compte ? <a class="inscrire" href="inscription.php">Inscrivez-vous !</a></p>
+        </div>
   
+
   
-   <div class="col-auto">
-     
-     <label for="inputPassword2" class="visually-hidden">Mot de passe</label>
-     <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-   </div>
-  
-  
-   <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Connexion</button>
-   </div>
-  
-</form>
-</div>   
  
   </body>
 </html>
