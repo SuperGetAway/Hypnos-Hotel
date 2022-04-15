@@ -1,22 +1,26 @@
 <!DOCTYPE html>
+<?
+   require("includes/bddconnect.php"); 
+?>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" type="text/css" href="./connect.css" />
     <link rel= "stylesheet"  href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin = "anonyme" >
-   
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap"
       rel="stylesheet"
     />
-
     <title>Connexion</title>
-
-    <nav class="navbar navbar-dark bg-drak">
+    
+    
+</head>
+<nav class="navbar navbar-dark bg-drak">
       <ul class="nav">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#"
@@ -44,36 +48,9 @@
         </div>
       </ul>
     </nav>
-  </head>
-  <body>
-    <div class="logo">
-    <img src="image/best tous.jpg" class="rounded mx-auto d-block alt="..." />
-    </div>
- <div class="connect">
- <form role="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">>  
+<body>
     
-    <div class="col-auto">
-      
-      <label for="inputEmail2" class="visually-hidden">Email</label>
-     <input type="email" class="form-control" id="inputEmail2" placeholder="email">
-     
-    </div>
-  
-  
-   <div class="col-auto">
-     
-     <label for="inputPassword2" class="visually-hidden">Mot de passe</label>
-     <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
-   </div>
-  
-  
-   <div class="col-auto">
-    <button type="submit" class="btn btn-primary mb-3">Connexion</button>
-   </div>
-  
-</form>
-</div>   
- 
-  </body>
-  
+
+     <img src="\image/best tous.jpg\" class="rounded mx-auto d-block" />
+</body>
 </html>
