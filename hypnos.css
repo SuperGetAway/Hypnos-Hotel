@@ -1,3 +1,6 @@
+* {
+  max-width: 98.9vw;
+}
 body {
   background-color: #373543;
 }
@@ -23,7 +26,13 @@ span {
 img {
   border-radius: 5%;
 }
-img:hover {
+.main img:hover {
+  transform: scale(1.08);
+}
+.main2 img:hover {
+  transform: scale(1.08);
+}
+.table7 img:hover {
   transform: scale(1.08);
 }
 .décoration {
@@ -96,4 +105,8 @@ a:hover {
   text-align: center;
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.text-foot p {
+  font-family: Kanit;
+  color: aliceblue;
 }

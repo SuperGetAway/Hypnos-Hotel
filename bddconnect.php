@@ -1,8 +1,8 @@
 <? 
-$host = 'localhost'; 
+$host = 'office.ntclick.com:33306'; 
 $db = 'hypnos';
 $user ='root';
-$passdb = '';
+$passdb = 'a15bA4De1f';
 
 $charset = 'utf8mb4';
 $dsn = "mysql:host=$host;ddbname=$db;charset=$charset";

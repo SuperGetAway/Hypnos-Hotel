@@ -82,7 +82,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pseudo']) && isset($_PO
 
 
         <div class="inscription">
-            <form name="formulaire" method="POST" action="http://localhost/php/Projet site/inscription.php">
+            <form name="formulaire" method="POST" action="http://localhost/php/hypnos/inscription.php">
             <label for="pseudo">Pseudonyme :</label>
             <input class="identifiants" type="text" name="pseudo" id='pseudo'>
             <label for="email">Adresse mail :</label>
@@ -100,4 +100,3 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['pseudo']) && isset($_PO
 </body>
 </html>
 
-<?php } include("footer.php")?>
