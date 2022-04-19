@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="contacter.css" />
+    <link rel="stylesheet" type="text/css" href="contacter.css" />
+    <link rel= "stylesheet"  href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin = "anonyme" >
     <link rel="shortcut icon" type="image/png" href="image/favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -44,7 +44,7 @@
     </div>
   
     <div class="formulaire">
-<form action="donnée.php" method="post" >
+<form action="contacter.php" method="post" >
       <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Prénom</label>
         <input

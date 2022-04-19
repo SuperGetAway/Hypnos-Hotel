@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<?
-   require("includes/bddconnect.php"); 
-?>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="./connect.css" />
+    <link rel="stylesheet" type="text/css" href="connect.css" />
     <link rel= "stylesheet"  href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin = "anonyme" >
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -20,6 +17,41 @@
     
     
 </head>
+<body>
+
+<?php 
+if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['email']) && isset($_POST["password"])){
+    
+    $Err = "";
+    $everythingok = true;
+  
+    //verif email
+    if(filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
+        $email = $_POST['email'];
+    }else{
+        $Err  = $Err . "Adresse email invalide. <br>";
+        $everythingok = false;
+    }
+
+    //verif password + hash
+    $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+    // regexpassword?
+    if($everythingok){
+        include("bddconnect.php");
+        
+        $verif = $pdo->prepare('SELECT * FROM users WHERE email = :email');
+        $verif->execute(array(":email"=>$email));
+        
+        if(!$verif->fetch()){
+
+        $requete = $pdo->prepare("INSERT INTO users (email, password, ) VALUES (:email, :password, )");
+        $requete->execute(array(":email"=>$email, "password"=>$password,));
+        }else{
+            $Err  = $Err . 'Ces identifiants sont déjà pris.';
+        }
+        //Afficher succes
+        ?>
+        
 <nav class="navbar navbar-dark bg-drak">
       <ul class="nav">
         <li class="nav-item">
@@ -48,9 +80,29 @@
         </div>
       </ul>
     </nav>
-<body>
+<div class="top">
+ <img src="\image/best tous.jpg\" class="rounded mx-auto d-block" />
+</div>
+  <div class="connect">
+    <form action="enregistrer.php" class="row " method="post">  
     
+     <div class="col-auto">
+       <label for="inputEmail2" class="visually-hidden">Email</label>
+       <input type="email" class="form-control" id="inputEmail2" placeholder="email">
+     </div>
+     <div class="col-auto">
+       <label for="inputPassword2" class="visually-hidden">Mot de passe</label>
+       <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+     </div>
+     <div class="col-auto">
+       <button type="submit" class="btn btn-primary mb-3">Connexion</button>
+     </div>
+  
+    </form>
+  </div>
 
-     <img src="\image/best tous.jpg\" class="rounded mx-auto d-block" />
-</body>
+
+
+
+ </body>
 </html>

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link rel="stylesheet" href="Reservee.css" />
+    <link rel= "stylesheet"  href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin = "anonyme" >
+    <link rel="stylesheet" type="text/css" href="Reservee.css" />
     <link rel="shortcut icon" type="image/png" href="image/favicon.png"/>
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
@@ -41,10 +41,11 @@
   </head>
   <body>
     <div class="logo">
-    <img src="image/best tous.jpg" class="rounded mx-auto d-block alt="..." />
+      <img src="image/best tous.jpg" class="rounded mx-auto d-block alt="..." />
     </div>
-    <div class="formulaire">
-      <div class="mb-3">
+<form action="reservation.php" class="row " method="post">
+ <div class="formulaire">
+    <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Prénom</label>
         <input
           type="name"
@@ -52,8 +53,8 @@
           id="exampleFormControlInput1"
           placeholder="Xavier"
         />
-      </div>
-      <div class="mb-3">
+    </div>
+    <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Nom</label>
         <input
           type="fristname"
@@ -61,9 +62,8 @@
           id="exampleFormControlInput1"
           placeholder="Dupont"
         />
-      </div>
-
-      <div class="mb-3">
+    </div>
+    <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"
           >Adresse mail</label
         >
@@ -73,8 +73,8 @@
           id="exampleFormControlInput1"
           placeholder="Xavierdupont@exemple.com"
         />
-      </div>
-      <div class="mb-3">
+    </div>
+    <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label"
           >Numéro de téléphone</label
         >
@@ -84,10 +84,10 @@
           id="exampleFormControlInput1"
           placeholder="06.00.00.00.00"
         />
-      </div>
-      <div>
+    </div>
+    <div>
         <label for="sujet">Sélectionné Votre établissement</label><br />
-        <div class="liste">
+      <div class="liste">
           <br/>
           <select name="sujet" id="sujet" required>
             <option value="" disabled selected hidden>
@@ -101,11 +101,11 @@
             <option value="Monaco-Garden">Monaco Garden</option>
             <option value="Corse-Area">Corse Area</option>
           </select>
-        </div>
+      </div>
         <br/>
-         <div >
+       <div >
         <label for="sujet">Sélectionné La Suite</label><br />
-        <div class="liste2">
+       <div class="liste2">
           <br/>
           <select name="sujet" id="sujet" required>
             <option value="" disabled selected hidden>
@@ -131,15 +131,15 @@
         value="2018-07-22"
         min="2022-04-01" max="2025-12-31">
         </div>
-     </div>
+ </div>
        
         <br/>
-<div class="confirm">
-    <button type="submit" class="btn btn-outline-light">Envoyer</button>
+    <div class="confirm">
+      <button type="submit" class="btn btn-outline-light">Envoyer</button>
     <i class="bi bi-person-circle"></i>
-       </div>
-       </div>
-     
+    </div>
+ </div>
+</form>  
 
     
        
@@ -148,4 +148,3 @@
   </body>
   
 </html>
-
