@@ -1,5 +1,6 @@
 * {
   background-color: #373543;
+  max-width: 98.9vw;
 }
 span {
   color: aliceblue;
@@ -7,7 +8,7 @@ span {
 }
 .connexion {
   padding-right: 0px;
-  padding-left: 1580px;
+  padding-left: 1549px;
   color: white;
 }
 
@@ -18,7 +19,7 @@ span {
   height: 200px;
 }
 .mb-3 {
-  height: 70px;
+  height: 80px;
   width: 500px;
 }
 .click2 {

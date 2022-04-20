@@ -2,6 +2,9 @@
   background-color: #373543;
   max-width: 99vw;
 }
+body {
+  background-color: #373543;
+}
 span {
   color: aliceblue;
   font-family: Kanit;

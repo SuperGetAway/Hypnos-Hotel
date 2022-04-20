@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="connect.css" />
-    <link rel= "stylesheet"  href= "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"  integrity= "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"  crossorigin = "anonyme" >
+    <link rel="stylesheet" href="connect.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E" />
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
     <link
@@ -14,28 +14,20 @@
       rel="stylesheet"
     />
     <title>Connexion</title>
-    <?php
-      $con = mysqli_connect('office.ntclick.com:33306','root','a15bA4De1f','hypnos');
-$sql = "insert into `hypnos`.`hotelusers` (`id`,`prénom`,`nom`,`mail`,`password`,`radio`) values (2,'q','s','d','f',1) ";
-
-$result = mysqli_query($con, $sql);  
-    ?>
-    
-</head>
-<body>       
+    <body>       
 <nav class="navbar navbar-dark bg-drak">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"
+          <a class="nav-link active" aria-current="page" href="index.html"
             ><span>Accueil</span></a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="Reserve.html"><span>Réservation</span></a>
+          <a class="nav-link" href="reservation.html"><span>Réservation</span></a>
         </li>
         <div class="connexion">
           <li class="nav-item">
-            <a class="nav-link" href="connect.html"></a>
+            <a class="nav-link" href="connexion.html"></a>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="16"
@@ -52,27 +44,9 @@ $result = mysqli_query($con, $sql);
       </ul>
     </nav>
 <div class="top">
- <img src="\image/best tous.jpg\" class="rounded mx-auto d-block" />
+ <img src="image/best tous.jpg" class="rounded mx-auto d-block" />
 </div>
-<?php
-if(!empty($_POST)){
-require_once "bddconnect.php";
-    if(
-      isset($_POST["mail"], $_POST["password"])
-      && !empty($_POST["mail"]) && !empty($_POST["password"])
-    ){
-      
-       $mail = strip_tags($_POST["mail"]);
-       $password = htmlspecialchars($_POST["password"]);
 
-       require_once "bddconnect.php";
-
-    }else{
-     die("Identifiants non-valide");
-    }
-}
-
-?>
   <div class="connect">
     <form action="enregistrer.php" class="row " method="POST">  
     
@@ -95,4 +69,7 @@ require_once "bddconnect.php";
 
 
  </body>
+
+
+ 
 </html>
